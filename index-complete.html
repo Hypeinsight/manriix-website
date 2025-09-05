@@ -1808,37 +1808,37 @@
             <h2>Request Private Demo</h2>
             <p>Experience the future of visual storytelling with Manriix. Fill out the form below and our team will contact you to schedule a personalized demonstration.</p>
             
-            <form class="demo-form" action="https://formspree.io/f/xanwewzo" method="POST">
+            <form class="demo-form" onsubmit="submitDemoRequest(event)">
                 <div class="form-row">
                     <div class="form-group">
                         <label for="firstName">First Name *</label>
-                        <input type="text" name="firstName" id="firstName" required>
+                        <input type="text" id="firstName" required>
                     </div>
                     <div class="form-group">
                         <label for="lastName">Last Name *</label>
-                        <input type="text" name="lastName" id="lastName" required>
+                        <input type="text" id="lastName" required>
                     </div>
                 </div>
                 
                 <div class="form-row">
                     <div class="form-group">
                         <label for="email">Email Address *</label>
-                        <input type="email" name="email" id="email" required>
+                        <input type="email" id="email" required>
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number</label>
-                        <input type="tel" name="phone" id="phone">
+                        <input type="tel" id="phone">
                     </div>
                 </div>
                 
                 <div class="form-row">
                     <div class="form-group">
                         <label for="company">Company *</label>
-                        <input type="text" name="company" id="company" required>
+                        <input type="text" id="company" required>
                     </div>
                     <div class="form-group">
                         <label for="industry">Industry</label>
-                        <select name="industry" id="industry">
+                        <select id="industry">
                             <option value="">Select Industry</option>
                             <option value="events">Events & Conferences</option>
                             <option value="retail">Retail & Commerce</option>
@@ -1853,13 +1853,13 @@
                 
                 <div class="form-group">
                     <label for="useCase">Intended Use Case *</label>
-                    <textarea name="useCase" id="useCase" placeholder="Tell us about your specific use case, event size, timeline, and any particular requirements..." required></textarea>
+                    <textarea id="useCase" placeholder="Tell us about your specific use case, event size, timeline, and any particular requirements..." required></textarea>
                 </div>
                 
                 <div class="form-row">
                     <div class="form-group">
                         <label for="timeline">Timeline</label>
-                        <select name="timeline" id="timeline">
+                        <select id="timeline">
                             <option value="">Select Timeline</option>
                             <option value="immediate">Immediate (1-30 days)</option>
                             <option value="short">Short-term (1-3 months)</option>
@@ -1869,7 +1869,7 @@
                     </div>
                     <div class="form-group">
                         <label for="budget">Budget Range</label>
-                        <select name="budget" id="budget">
+                        <select id="budget">
                             <option value="">Select Range</option>
                             <option value="under-50k">Under £50,000</option>
                             <option value="50k-100k">£50,000 - £100,000</option>
