@@ -117,7 +117,7 @@
         }
 
         .nav-logo {
-            height: 40px;
+            height: 80px;
             width: auto;
             transition: filter 0.3s ease;
         }
@@ -221,16 +221,10 @@
             transform: translate(-50%, -50%);
             width: var(--highlight-size, 25px);
             height: var(--highlight-size, 25px);
-            background: 
-                radial-gradient(ellipse at 40% 30%, 
-                    rgba(255,255,255,1) 0%, 
-                    rgba(255,255,255,0.8) 30%, 
-                    rgba(255,255,255,0.3) 60%, 
-                    transparent 100%
-                );
+            background: transparent;
             border-radius: 50%;
             transition: all 0.15s cubic-bezier(0.4, 0.0, 0.2, 1);
-            opacity: var(--highlight-opacity, 1);
+            opacity: 0;
         }
         
         .hero:hover .hero-eye {
@@ -1118,14 +1112,20 @@
         }
 
         .footer-brand {
-            max-width: 400px;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
         }
 
         .footer-logo {
-            height: 300px;
+            height: 60px;
             width: auto;
-            margin-bottom: 1rem;
-            transform: rotate(90deg);
+            align-self: flex-start;
+        }
+
+        .footer-text {
+            flex: 1;
         }
 
         .footer-description {
@@ -1397,10 +1397,6 @@
         <div class="hero-grid"></div>
         <div class="hero-eye" id="heroEye"></div>
         <div class="hero-content">
-            <div class="hero-badge">
-                <div class="manriix-eye"></div>
-                AI • ROBOTICS • PHOTOGRAPHY
-            </div>
             <h1 class="hero-title">
                 The Future of<br>
                 <span class="accent">Visual Storytelling</span>
@@ -1770,7 +1766,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <img src="assets/images/manriix_logo.png" alt="Manriix" class="footer-logo">
+                    <img src="assets/images/horizontal_logo_white.png" alt="Manriix" class="footer-logo">
                     <p class="footer-description">
                         Pioneering the convergence of artificial intelligence, robotics, and human creativity. Building tomorrow's visual engagement platforms today.
                     </p>
